@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #ffffff;
+}
+
+.red {
+    background-color: red;
+    height: 400px;
+    width: 33.33333%;
+}
+
+.green {
+    background-color: green;
+    height: 400px;
+    width: 33.33333%;
+}
+
+.blue {
+    background-color: blue;
+    height: 400px;
+    width: 33.33333%;
+}
+
+.box{
+    float: left;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document Object Model</title>
+</head>
+
+<body>
+    <input type="button" value="Increase Font Size 1px" onclick="increaseFontSize('p1')">
+    <input type="button" value="Decrease Font Size 1px" onclick="decreaseFontSize('p1')">
+
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptate voluptatum aliquid voluptas excepturi qui modi quas deserunt quibusdam nemo in sapiente assumenda ipsa, ullam velit est fugit perferendis accusamus blanditiis, dolores dolor vel quis reiciendis. Nisi expedita recusandae iusto nostrum eius eligendi. Culpa ea doloremque itaque praesentium quo autem dolore error, perspiciatis maxime sint inventore, ipsa cum, aperiam deserunt.</p>
+
+    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium facere, alias vitae suscipit facilis natus quasi quam eum voluptates ullam porro placeat quidem quis quae atque aliquid veniam earum sapiente, accusantium a, molestiae consequatur? Voluptates eaque maxime similique, beatae perspiciatis repellendus! Nam perspiciatis, aliquam quam placeat blanditiis explicabo corporis quae a consequatur repudiandae quibusdam in fugiat veniam modi alias quod ipsum aut nisi odit ipsa eaque provident molestias? Commodi, dolor.</p>
+
+    <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officiis et fuga doloremque a ex dolore ullam dicta minus. Eligendi voluptates consequatur voluptatum et ipsum architecto, tempore nostrum nam ex porro iusto, ullam quasi nisi aliquam dignissimos voluptatem perspiciatis numquam. Commodi voluptas dolores ea, voluptatum dignissimos modi molestias aspernatur temporibus!</p>
+
+    <script>
+        function changeColor() {
+            document.getElementById('p1').style.color = 'green';
+            document.getElementById('p2').style.color = 'yellow';
+            document.getElementById('p3').style.color = 'red';
+        }
+        changeColor();
+    </script>
+
+    <script>
+        function changeBgColor(color) {
+            document.querySelector('body').style.backgroundColor = color;
+        }
+        changeBgColor('lightblue');
+    </script>
+
+    <script>
+        function copyContent(paragraph1, paragraph2) {
+            let p1 = document.getElementById(paragraph1);
+            let p2 = document.getElementById(paragraph2);
+            p1.innerText = p2.innerText;
+        }
+        copyContent('p1', 'p2');
+    </script>
+
+    <script>
+        function changeFontSize(x) {
+            let changeFontSize = document.querySelectorAll('p');
+            for (let i = 0; i < changeFontSize.length; i++) {
+                changeFontSize[i].style.fontSize = x + 'px';
+            }
+        }
+        changeFontSize(20);
+    </script>
+
+    <script>
+        function increaseFontSize(paragraph) {
+            let para = document.getElementById(paragraph);
+            let style = window.getComputedStyle(para, null).getPropertyValue('font-size');
+            let currentSize = parseFloat(style);
+            if (currentSize <= 29) {
+                para.style.fontSize = (currentSize + 1) + 'px';
+            }
+        }
+    </script>
+
+    <script>
+        function decreaseFontSize(paragraph) {
+            let para = document.getElementById(paragraph);
+            let style = window.getComputedStyle(para, null).getPropertyValue('font-size');
+            let curentSize = parseFloat(style);
+            if (curentSize >= 11) {
+                para.style.fontSize = (curentSize - 1) + 'px';
+            }
+        }
+    </script>
+</body>
+
+</html>

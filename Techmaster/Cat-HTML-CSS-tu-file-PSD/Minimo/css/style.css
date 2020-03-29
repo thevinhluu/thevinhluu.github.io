@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #626262;
+}
+
+.navbar {
+  text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1063px;
+    padding: 0;
+  }
+
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .navbar-brand {
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 9px;
+    margin: 2px 0 2px -18px;
+  }
+
+  nav.navbar.navbar-light.bg-faded {
+    margin-top: 66px;
+    margin-bottom: 66px;
+  }
+
+  .bg-faded {
+    background-color: #fff;
+  }
+
+  .nav-item {
+    margin: 10px 50px;
+  }
+
+  .nav-item:last-child {
+    margin-right: -15px;
+  }
+
+  .description {
+    padding-left: 83px;
+    padding-right: 83px;
+    padding-top: 100px;
+  }
+
+  .description h6 {
+    text-transform: uppercase;
+  }
+
+  .description h2 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .description p {
+    margin-top: 38px;
+  }
+
+  p:last-child {
+    margin-top: 55px;
+    text-transform: uppercase;
+  }
+
+  .posts {
+    padding-left: 83px;
+    padding-right: 83px;
+  }
+
+  .no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .item {
+    width: 420px;
+  }
+
+  .posts .row .col-md-6:last-child .item {
+    margin-left: 28px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .td {
+    margin-top: 32px;
+  }
+
+  .tieude {
+    margin-top: 31px;
+    font-size: 30px;
+  }
+
+  .noidung {
+    margin-top: 41px;
+  }
+
+  .posts .row {
+    margin-top: 130px;
+  }
+
+  .newsletter {
+    margin-top: 125px;
+    background: rgba(204, 204, 204, 0.3);
+    height: 287px;
+  }
+
+  .newsletter h2 {
+    font-size: 30px;
+    margin-top: 78px;
+  }
+
+  .row.enter-email p {
+    margin-top: 85px;
+    text-transform: inherit;
+    border-bottom: 1px solid black;
+  }
+
+  .icon {
+    width: 34px;
+    height: 19px;
+  }
+
+  footer {
+    margin-top: 100px;
+    height: 100px;
+    background: rgba(204, 204, 204, 0.3);
+  }
+}

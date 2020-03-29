@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="result.html" method="get" id="form-register">
+        <h1>Sign Up</h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="user_name" placeholder="input your name here">
+        <span class="error"></span><br><br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="user_email" placeholder="input your email here">
+        <span class="error"></span><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="user_password" placeholder="input your password here">
+        <span class="error"></span><br><br>
+        <label for="user_phone">Phone Number</label>
+        <input type="text" id="phone_number" name="user_phone" placeholder="input your phone number here">
+        <span class="error"></span><br><br>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="user_address" placeholder="input your address here">
+        <span class="error"></span><br><br>
+        <label>Gender</label>
+        <input type="radio" id="male" value="male" name="user_gender">
+        <label for="male" class="light">Male</label><br>
+        <input type="radio" id="female" value="female" name="user_gender">
+        <label for="female" class="light">Female</label><br>
+        <input type="radio" id="other" value="other" name="user_gender">
+        <label for="other" class="light">Other</label><br><br>
+        <label>Birthday</label>
+        <select name="day" id="day">
+            <option value="0">Day</option>
+            <script type="text/javascript">
+            for (let i = 1; i <= 31; i++) {
+                document.write('<option value=""' + i + '>' + i + '</option' + '<br/>');
+            }
+            </script>
+        </select>
+        <select name="month" id="month">
+            <option value="0">Month</option>
+            <script type="text/javascript">
+            for (let i = 1; i <= 12; i++)
+                document.write('<option value=""' + i + '>' + i + '</option' + '<br/>');
+            </script>
+        </select>
+        <select name="year" id="year">
+            <option value="0">Year</option>
+            <script type="text/javascript">
+            for (let i = 2019; i >= 1905; i--) {
+                document.write('<option value=""' + i + '>' + i + '</option' + '<br/>');
+            }
+            </script>
+        </select>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+    $('#form-register').on('submit', function() {
+        var isValid = true;
+        if ($('#name').val().trim() == '') {
+            $('#name').next('span').text('Name is empty !');
+            isValid = false;
+        } else {
+            $('#name').next('span').text('');
+        }
+        if ($('#email').val().match(/^(?:(?:[\w\.\-_]+@[\w\d]+(?:\.[\w]{2,6})+)[,;]?\s?)+$/) == null) {
+            $('#email').next('span').text('Email is invalid !');
+            isValid = false;
+        } else {
+            $('#email').next('span').text('');
+        }
+        if ($('#password').val().trim() == '') {
+            $('#password').next('span').text('Password is empty !');
+            isValid = false;
+        } else {
+            $('#password').next('span').text('');
+        }
+        if ($('#phone_number').val().trim() == '') {
+            $('#phone_number').next('span').text('Phone number is empty !');
+            isValid = false;
+        } else {
+            $('#phone_number').next('span').text('');
+        }
+        if ($('#address').val().trim() == '') {
+            $('#address').next('span').text('Address is empty !');
+            isValid = false;
+        } else {
+            $('#address').next('span').text('');
+        }
+
+
+        return isValid;
+    })
+    </script>
+</body>
+
+</html>

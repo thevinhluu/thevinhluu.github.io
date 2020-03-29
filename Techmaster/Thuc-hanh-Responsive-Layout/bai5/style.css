@@ -1,0 +1,45 @@
+* {margin: 0; padding: 0;}
+
+.header {
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.motkhoi {
+  background: blue;
+  height: 30px;
+  width: 60px;
+}
+
+.content {
+  padding: 15px 15px 20px 15px;
+  background: lightblue;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+img:first-child {margin-bottom: 20px;}
+
+@media (min-width: 768px) {
+
+  .motkhoi {width: 90px;}
+
+  .content {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    width: calc((100% - 15px) / 2);
+  }
+
+  img:first-child {margin-bottom: 0;}
+
+}

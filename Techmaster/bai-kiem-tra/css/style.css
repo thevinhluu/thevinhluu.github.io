@@ -1,0 +1,117 @@
+body {
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+#main-header {
+	background-color: coral;
+	color: #fff;
+}
+
+#navbar {
+	background-color: #333;
+	color: #fff;
+}
+
+#navbar ul {
+	padding: 0;
+	list-style: none;
+}
+
+#navbar li {
+	display: inline;
+}
+
+#navbar a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding-right: 15px;
+}
+
+#showcase {
+	background-image: url('../img/showcase.jpg');
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#showcase h1{
+	color: #fff;
+	font-size: 50px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}
+
+#main {
+	float: left;
+	width: 100%;
+	padding: 0 30px;
+}
+
+.col {
+	box-sizing: border-box;
+	float: left;
+	width: 33.33333%;
+	padding: 10px;
+	position: relative;
+}
+
+.thumb1, .thumb2, .title {
+	border: 1px solid #ddd;
+	cursor: pointer;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.thumb1 a, .thumb2 a {
+	text-decoration: none;
+}
+
+.thumb1 img, .thumb2 img {
+	vertical-align: middle;
+}
+
+.thumb1 {
+	padding: 4px;
+	transition: all 0.5s ease;
+}
+
+.thumb2 {
+	padding: 4px;
+	overflow: hidden;
+}
+
+.thumb2 img {
+	transition: all 0.5s linear;
+}
+
+.thumb1:hover {
+	transform: translate(0, -5px);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.thumb2:hover img {
+	transform: scale(1.2);
+	opacity: 0.8;
+}
+
+#main-footer{
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}

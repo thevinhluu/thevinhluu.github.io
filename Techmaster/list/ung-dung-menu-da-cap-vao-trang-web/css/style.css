@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #252525;
+}
+
+/* Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+	height: 38px;
+	background: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+/* Header */
+header {
+    background: #252525;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ffffff 1px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: slategray;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Ban đầu ẩn menu cấp 2*/
+#menu .sub-menu {
+    display: none;
+    position: absolute;
+}
+
+/* Khi hover thì hiện menu cấp 2 */
+#menu > li:hover .sub-menu {
+    display: flex;
+}
+
+/*Showcase*/
+#showcase {
+	min-height: 465px;
+    background: url('../img/showcase/showcase.jpg') no-repeat;
+}
+
+#showcase-menu {
+	min-height: 465px;
+    background: url('../img/showcase/showcase-menu.jpg') no-repeat;
+}
+
+#showcase-menu-combo {
+	min-height: 465px;
+    background: url('../img/showcase/showcase-menu-combo.jpg') no-repeat;
+}
+
+#showcase-menu-valuecombo {
+	min-height: 300px;
+    background: url('../img/showcase/showcase-menu-valuecombo.jpg') no-repeat 160px;
+}
+
+#showcase-pizza {
+    min-height: 300px;
+	background: url('../img/showcase/showcase-pizza.jpg') no-repeat 160px;
+}
+
+#showcase-myvacom {
+    min-height: 300px;
+	background: url('../img/showcase/showcase-myvacom.jpg') no-repeat 160px;
+}
+
+#showcase-khaivi {
+    min-height: 300px;
+	background: url('../img/showcase/showcase-khaivi.jpg') no-repeat 160px;
+}
+
+#showcase-thucuong {
+    min-height: 300px;
+	background: url('../img/showcase/showcase-thucuong.jpg') no-repeat 160px;
+}
+
+/*Newsletter*/
+#newsletter {
+	padding: 15px;
+	color: #ffffff;
+	background: #252525;
+}
+
+#newsletter h1 {
+	float: left;
+}
+
+#newsletter form {
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+/*Boxes*/
+#boxes {
+	margin-top: 20px;
+}
+
+#boxes .box {
+    background: rgba(0,0,0,0.6);
+	float: left;
+	text-align: center;
+	width: 45%;
+    padding: 10px;
+    margin: 20px;
+}
+
+#boxes .box img {
+	width: 250px;
+}
+
+#boxes .box a {
+    color: #d4a26f;
+    text-decoration: none;
+}
+
+#boxes .box h3 {
+    color: #d4a26f;
+}
+
+footer {
+	padding: 20px;
+    margin-top: 20px;
+    border-top: #ffffff solid 1px;
+	color: #ffffff;
+	background-color: #252525;
+	text-align: center;
+}

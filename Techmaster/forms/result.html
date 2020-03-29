@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+
+<body>
+    <h1>Đăng ký thành công</h1>
+    <script type="text/javascript">
+    function getURLParameter(sParam) {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) {
+                return sParameterName[1];
+            }
+        }
+    }
+
+    var name = getURLParameter('user_name');
+    var email = getURLParameter('user_email');
+    var password = getURLParameter('user_password');
+    var phoneNumber = getURLParameter('user_phone');
+    var address = getURLParameter('user_address');
+    var gender = getURLParameter('user_gender');
+
+    document.write('Name: ' + decodeURIComponent(name) + '<br/>');
+    document.write('Email: ' + decodeURIComponent(email) + '<br/>');
+    document.write('Password: ' + decodeURIComponent(password) + '<br/>');
+    document.write('Phone number: ' + decodeURIComponent(phoneNumber) + '<br/>');
+    document.write('Address: ' + decodeURIComponent(address) + '<br/>');
+    document.write('Gender: ' + decodeURIComponent(gender) + '<br/>');
+    </script>
+</body>
+
+</html>

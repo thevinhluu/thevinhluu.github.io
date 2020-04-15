@@ -248,6 +248,10 @@ li {
 	font-weight: 300;
 }
 
+.about-details p {
+	line-height: 2.6rem;
+}
+
 .profile-img {
 	flex: 1;
 	margin-right: 5rem;
@@ -385,6 +389,11 @@ li {
 	text-transform: uppercase;
 	font-weight: 300;
 	opacity: 0.3;
+	margin-bottom: 1rem;
+}
+
+.timeline p {
+	line-height: 2.6rem;
 }
 
 .timeline .date {
@@ -446,7 +455,7 @@ select,
 textarea {
 	width: 100%;
 	padding: 1rem;
-	margin-bottom: 5px;
+	margin: 0.4rem 0 1rem;
 	border: none;
 	outline-color: #fd57bf;
 }

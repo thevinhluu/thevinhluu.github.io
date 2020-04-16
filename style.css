@@ -38,6 +38,7 @@ a {
 p {
 	font-size: 1.8rem;
 	font-weight: 300;
+	line-height: 2.6rem;
 }
 
 img {
@@ -336,13 +337,13 @@ li {
 	margin-bottom: 0;
 }
 
-/* .portfolio-img {
-  flex: 1;
+.portfolio-img {
+	flex: 2;
 }
 
 .portfolio-description {
-  flex: 1;
-} */
+	flex: 1;
+}
 
 .portfolio-description h1 {
 	font-size: 3rem;
